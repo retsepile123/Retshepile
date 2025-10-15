@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Feedback</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8c8dc; /* Baby pink */
+        color: #4b2e05;
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: #024fa1; /* Basotho blue */
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    nav {
+        background-color: #03a65a; /* Basotho green */
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        color: #fffdd0;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    form {
+        background-color: #ffffff;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        max-width: 500px;
+        width: 100%;
+    }
+
+    form h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #024fa1;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px 12px;
+        margin-bottom: 20px;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        font-size: 1em;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    select:focus,
+    textarea:focus {
+        border-color: #024fa1;
+        box-shadow: 0 0 5px rgba(2,79,161,0.5);
+        outline: none;
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    input[type="submit"] {
+        background-color: #03a65a; /* Basotho green */
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        width: 100%;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #028c48;
+        transform: scale(1.05);
+    }
+
+    footer {
+        text-align: center;
+        background-color: #024fa1;
+        color: white;
+        padding: 12px 0;
+        margin-top: 40px;
+        font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+        form {
+            padding: 20px;
+        }
+    }
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Contact & Feedback</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="culture.html">Culture</a>
+    <a href="music.html">Music</a>
+    <a href="crafts.html">Crafts</a>
+    <a href="contact.html" class="active">Contact</a>
+</nav>
+
+<main>
+    <form action="#" method="POST">
+        <h2>Send Us a Message</h2>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+        <label for="topic">Topic of Interest:</label>
+        <select id="topic" name="topic" required>
+            <option value="">--Select a Topic--</option>
+            <option value="culture">Culture</option>
+            <option value="music">Music & Dance</option>
+            <option value="crafts">Crafts & Art</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2025 Basotho Heritage | We Value Your Feedback</p>
+</footer>
+
+</body>
+</html>
